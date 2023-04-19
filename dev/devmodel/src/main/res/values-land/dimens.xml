@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">48dp</dimen>
+    <dimen name="land_port">0.06</dimen>
+    <dimen name="land_const">0.8</dimen>
+</resources>

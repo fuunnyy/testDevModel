@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="测试模式页面"
+        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test Factory"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_second"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_first"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Abst-Factory"
+        app:layout_constraintBottom_toTopOf="@id/button_third"
+        app:layout_constraintEnd_toEndOf="@+id/button_first"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintStart_toStartOf="@+id/button_first"
+        app:layout_constraintTop_toBottomOf="@id/button_first"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_third"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test Builder"
+        app:layout_constraintBottom_toTopOf="@id/button_fourth"
+        app:layout_constraintEnd_toEndOf="@+id/button_second"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintStart_toStartOf="@+id/button_second"
+        app:layout_constraintTop_toBottomOf="@id/button_second"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_fourth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test clone"
+        app:layout_constraintBottom_toTopOf="@id/button_fiveth"
+        app:layout_constraintEnd_toEndOf="@+id/button_third"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintStart_toStartOf="@+id/button_third"
+        app:layout_constraintTop_toBottomOf="@id/button_third"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_fiveth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test single"
+        app:layout_constraintBottom_toTopOf="@id/button_sixth"
+        app:layout_constraintEnd_toEndOf="@+id/button_fourth"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintStart_toStartOf="@+id/button_fourth"
+        app:layout_constraintTop_toBottomOf="@id/button_fourth"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_sixth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test adapter"
+        app:layout_constraintBottom_toTopOf="@id/button_sivith"
+        app:layout_constraintEnd_toEndOf="@+id/button_fiveth"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintStart_toStartOf="@+id/button_fiveth"
+        app:layout_constraintTop_toBottomOf="@id/button_fiveth"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_sivith"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test channel"
+        app:layout_constraintBottom_toTopOf="@id/button_eighth"
+        app:layout_constraintEnd_toEndOf="@+id/button_sixth"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintStart_toStartOf="@+id/button_sixth"
+        app:layout_constraintTop_toBottomOf="@id/button_sixth"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_eighth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test compile"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/button_sivith"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintStart_toStartOf="@+id/button_sivith"
+        app:layout_constraintTop_toBottomOf="@id/button_sivith"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_ninth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test 修饰"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_first"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_ten"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test agency"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_second"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_eleven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test agency"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_third"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_twel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test command"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_fourth"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_thirtheen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test observer"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_fiveth"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_fourten"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test state"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_sixth"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_fivteen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test strategy"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_sivith"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_sixteen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test temp"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_eighth"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port" />
+
+    <Button
+        android:id="@+id/button_seventeen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="test visitor"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintHeight_percent="@dimen/land_const"
+        app:layout_constraintWidth_percent="@dimen/land_port"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
